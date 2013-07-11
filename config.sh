@@ -100,6 +100,11 @@ case "$1" in
 	echo DEVICE=crespo4g >> .tmp-config &&
 	repo_sync $1
 	;;
+	
+"One V")
+	echo DEVICE=primou >> .tmp-config &&
+	repo_sync $1
+	;;
 
 "otoro"|"unagi"|"keon"|"inari"|"leo"|"hamachi"|"peak"|"helix")
 	echo DEVICE=$1 >> .tmp-config &&
