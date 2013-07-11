@@ -100,7 +100,12 @@ case "$1" in
 	echo DEVICE=crespo4g >> .tmp-config &&
 	repo_sync $1
 	;;
-
+	
+"one-v")
+	echo DEVICE=primou >> .tmp-config &&
+	repo_sync $1
+	;;
+	
 "otoro"|"unagi"|"keon"|"inari"|"leo"|"hamachi"|"peak"|"helix")
 	echo DEVICE=$1 >> .tmp-config &&
 	repo_sync $1
@@ -147,6 +152,7 @@ case "$1" in
 	echo - leo
 	echo - hamachi
 	echo - helix
+	echo - one-v
 	echo - tara
 	echo - pandaboard
 	echo - emulator
